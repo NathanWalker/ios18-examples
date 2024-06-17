@@ -67,3 +67,29 @@ Now run with: `ns debug ios`
 ```bash
 ns debug ios --no-hmr
 ```
+
+### Font weight animation
+
+https://x.com/MengTo/status/1802651973344456822
+
+#### Try with HMR (Hot Module Replacement):
+
+Adjust `app-routing.module` from:
+
+```ts
+{ path: '', redirectTo: '/items', pathMatch: 'full' },
+```
+
+to:
+
+```ts
+{ path: '', redirectTo: '/animated-text', pathMatch: 'full' },
+```
+
+Now run with: `ns debug ios`
+
+#### Try without HMR:
+
+```bash
+ns debug ios --no-hmr
+```

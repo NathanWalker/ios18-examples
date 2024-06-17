@@ -1,0 +1,17 @@
+<ActionBar title="iOS 18 Text Animations"> </ActionBar>
+
+<GridLayout rows="*,auto,*,auto">
+  <StackLayout row="1">
+    <SwiftUI swiftId="animatedText" [data]="line1" height="50" />
+    <SwiftUI swiftId="animatedText" [data]="line2" height="50" />
+    <SwiftUI swiftId="animatedText" [data]="line3" height="50" />
+    <SwiftUI swiftId="animatedText" [data]="line4" height="50" />
+    <SwiftUI swiftId="animatedText" [data]="line5" height="50" />
+  </StackLayout>
+  <Button
+    row="3"
+    (tap)="tryIt()"
+    class="mb-2 rounded-full bg-white text-black w-[150] text-lg p-4"
+    >Try It</Button
+  >
+</GridLayout>
