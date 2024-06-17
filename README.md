@@ -2,6 +2,10 @@
 
 Requires Xcode 16 Beta with iOS 18 simulator.
 
+https://github.com/NathanWalker/ios18-examples/assets/457187/6b7862cb-cb25-401e-a39e-d62f3c4640e3
+
+https://github.com/NathanWalker/ios18-examples/assets/457187/4b859090-e684-4718-97d5-e4b96ac41a7b
+
 ### Metal + SwiftUI
 
 Example from WWDC24 10151:
