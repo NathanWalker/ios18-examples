@@ -1,11 +1,9 @@
-<ActionBar title="My App"> </ActionBar>
+<ActionBar 
+  title="iOS 18 ❤️ with NativeScript"> 
+</ActionBar>
 
-<GridLayout>
-  <ListView [items]="items">
-    <ng-template let-item="item">
-      <StackLayout [nsRouterLink]="['/item', item.id]">
-        <Label [text]="item.name"></Label>
-      </StackLayout>
-    </ng-template>
-  </ListView>
-</GridLayout>
+<StackLayout class="p-4">
+    <Button (tap)="goTo('/metal')" class="rounded-full bg-blue-500 text-white p-4 m-2 w-[350] text-xl">Metal + SwiftUI</Button>
+    <Button (tap)="goTo('/sf-symbols')" class="rounded-full bg-blue-500 text-white p-4 m-2 w-[350] text-xl">SF Symbols 6 with Effects</Button>
+    
+</StackLayout>

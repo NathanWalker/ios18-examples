@@ -1,0 +1,59 @@
+<ActionBar title="iOS 18 SF Symbols 6 with Effects"> </ActionBar>
+
+<GridLayout rows="*,*,*,*" columns="*,*" class="p-2">
+  <Image
+    src="sys://photo.on.rectangle.angled"
+    tintColor="green"
+    [symbolEffect]="symbolWiggleEffect"
+  />
+  <Image
+    col="1"
+    src="sys://steeringwheel.and.hands"
+    tintColor="black"
+    [symbolEffect]="symbolWiggleEffect"
+  />
+
+  <Image
+    row="1"
+    src="sys://airpods.pro.chargingcase.wireless.radiowaves.left.and.right.fill"
+    tintColor="gray"
+    [symbolEffect]="symbolBounceEffect"
+  />
+  <Image
+    row="1"
+    col="1"
+    src="sys://lungs.fill"
+    tintColor="pink"
+    [symbolEffect]="symbolBreathEffect"
+  />
+
+  <Image
+    row="2"
+    src="sys://clock.arrow.trianglehead.2.counterclockwise.rotate.90"
+    tintColor="red"
+    width="150"
+    height="150"
+    [symbolEffect]="symbolRotateEffect"
+  />
+  <Image
+    row="2"
+    col="1"
+    src="sys://touchid"
+    [symbolEffect]="symbolColorEffect"
+  />
+
+  <Image
+    row="3"
+    src="sys://apple.haptics.and.music.note"
+    tintColor="purple"
+    (tap)="startSymbolTransition($event)"
+  />
+  <Image
+    row="3"
+    col="1"
+    src="sys://square.and.arrow.up"
+    width="150"
+    height="150"
+    [symbolEffect]="symbolWiggleEffect"
+  />
+</GridLayout>

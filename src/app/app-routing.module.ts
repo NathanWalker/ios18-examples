@@ -3,12 +3,14 @@ import { Routes } from '@angular/router'
 import { NativeScriptRouterModule } from '@nativescript/angular'
 
 import { ItemsComponent } from './item/items.component'
-import { ItemDetailComponent } from './item/item-detail.component'
+import { MetalComponent } from './item/metal.component'
+import { SFSymbolsComponent } from './item/sf-symbols.component'
 
 const routes: Routes = [
   { path: '', redirectTo: '/items', pathMatch: 'full' },
   { path: 'items', component: ItemsComponent },
-  { path: 'item/:id', component: ItemDetailComponent },
+  { path: 'metal', component: MetalComponent },
+  { path: 'sf-symbols', component: SFSymbolsComponent },
 ]
 
 @NgModule({
