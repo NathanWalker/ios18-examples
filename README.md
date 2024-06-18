@@ -93,3 +93,29 @@ Now run with: `ns debug ios`
 ```bash
 ns debug ios --no-hmr
 ```
+
+### Siri Animation
+
+https://x.com/MengTo/status/1802895763334422643
+
+#### Try with HMR (Hot Module Replacement):
+
+Adjust `app-routing.module` from:
+
+```ts
+{ path: '', redirectTo: '/items', pathMatch: 'full' },
+```
+
+to:
+
+```ts
+{ path: '', redirectTo: '/siri', pathMatch: 'full' },
+```
+
+Now run with: `ns debug ios`
+
+#### Try without HMR:
+
+```bash
+ns debug ios --no-hmr
+```

@@ -149,7 +149,7 @@ class RippleViewProvider: UIViewController, SwiftUIProvider {
                 } else if (key == "origin") {
                     props.origin = v as! CGPoint
                 } else if (key == "imageSrc") {
-                    props.imageSrc = v as! String
+                    props.imageSrc = v as? String
                 }
             }
         }

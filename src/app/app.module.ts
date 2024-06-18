@@ -7,11 +7,12 @@ import { ItemsComponent } from './item/items.component'
 import { MetalComponent } from './item/metal.component'
 import { SFSymbolsComponent } from './item/sf-symbols.component'
 import { AnimatedTextComponent } from './item/animated-text.component'
+import { SiriComponent } from './item/siri.component'
 
 @NgModule({
   bootstrap: [AppComponent],
   imports: [NativeScriptModule, AppRoutingModule],
-  declarations: [AppComponent, ItemsComponent, MetalComponent, SFSymbolsComponent, AnimatedTextComponent],
+  declarations: [AppComponent, ItemsComponent, MetalComponent, SFSymbolsComponent, AnimatedTextComponent, SiriComponent],
   providers: [],
   schemas: [NO_ERRORS_SCHEMA],
 })

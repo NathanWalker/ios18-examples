@@ -1,0 +1,15 @@
+<GridLayout>
+  <SwiftUI
+    swiftId="siri"
+    iosOverflowSafeArea="true"
+    [data]="{
+      gradientSpeed: 0.01
+    }"
+    (swiftUIEvent)="showAnswer()"
+  />
+  <Label
+    class="text-purple-400 align-bottom mb-[250] text-4xl font-bold text-center"
+    (loaded)="loadedAnswer($event)"
+    >Developers</Label
+  >
+</GridLayout>
