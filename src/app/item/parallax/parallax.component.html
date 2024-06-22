@@ -1,0 +1,13 @@
+<ActionBar title="iOS 18 + Scroll Transitions"> </ActionBar>
+
+<GridLayout>
+  @if (showMeshGradient) {
+  <SwiftUI
+    swiftId="meshGradient"
+    [data]="{}"
+    class="w-full h-full"
+    iosOverflowSafeArea="true"
+  />
+  }
+  <SwiftUI swiftId="parallax" [data]="data" class="w-full h-full" />
+</GridLayout>

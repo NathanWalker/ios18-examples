@@ -7,6 +7,7 @@ import { MetalComponent } from "./item/metal.component";
 import { SFSymbolsComponent } from "./item/sf-symbols.component";
 import { AnimatedTextComponent } from "./item/animated-text.component";
 import { SiriComponent } from "./item/siri.component";
+import { ParallaxComponent } from "./item/parallax/parallax.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "/items", pathMatch: "full" },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: "sf-symbols", component: SFSymbolsComponent },
   { path: "animated-text", component: AnimatedTextComponent },
   { path: "siri", component: SiriComponent },
+  { path: "parallax", component: ParallaxComponent },
 ];
 
 @NgModule({

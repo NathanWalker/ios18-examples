@@ -119,3 +119,29 @@ Now run with: `ns debug ios`
 ```bash
 ns debug ios --no-hmr
 ```
+
+### Scroll Transitions (Parallax Effect)
+
+https://developer.apple.com/videos/play/wwdc2024/10151/
+
+#### Try with HMR (Hot Module Replacement):
+
+Adjust `app-routing.module` from:
+
+```ts
+{ path: '', redirectTo: '/items', pathMatch: 'full' },
+```
+
+to:
+
+```ts
+{ path: '', redirectTo: '/parallax', pathMatch: 'full' },
+```
+
+Now run with: `ns debug ios`
+
+#### Try without HMR:
+
+```bash
+ns debug ios --no-hmr
+```
